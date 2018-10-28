@@ -71,7 +71,7 @@ class DummyUnlike(Unlike):
 
 @dummy.route('/post/comment', strict_slashes=False)
 class DummyComment(Comment):
-    @dummy.expect(comment_details)
+    @dummy.expect(new_comment_details)
     @dummy.doc(description='''
         Identical to PUT /comment but doesn't require any authentication
         Allows you to act as a "Anon" user.

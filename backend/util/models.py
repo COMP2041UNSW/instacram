@@ -7,6 +7,10 @@ comment_details = api.model('comment_details',{
     "comment": fields.String(example="Cute Photo!")
 })
 
+new_comment_details = api.model('new_comment_details',{
+    "comment": fields.String(example="Cute Photo!")
+})
+
 token_details = api.model('token_details',{
     'token': fields.String()
 })

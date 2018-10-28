@@ -228,7 +228,7 @@ class Comment(Resource):
     @posts.response(400, 'Malformed Request')
     @posts.response(404, 'Post Not Found')
     @posts.param('id','the id of the post to comment on')
-    @posts.expect(auth_details,comment_details)
+    @posts.expect(auth_details,new_comment_details)
     @posts.doc(description='''
         Lets the user pointed to by the auth token comment on
         the post referenced by 'id'.
